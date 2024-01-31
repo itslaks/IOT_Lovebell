@@ -1,0 +1,12 @@
+Components Required:
+1.Arduino Uno x 1 
+2.Gear motor x 4 
+3.Robot wheel x 4
+4.Motor Driver(L293D) x1 
+5.Ultrasonic sensor x 1 
+6.Bluetooth module x 1 
+7.Li-ion battery x 2
+8.Li-ion battery holder x 1 
+9.Jumper Wires  
+10.Dot board x 1
+11.Switch x 1

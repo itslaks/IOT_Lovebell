@@ -1,0 +1,12 @@
+The Process of this Bot:
+
+We can control this robot car using three methods. That is,
+
+1.Obstacle avoidance
+In this case, the robot car moves along using the obstacle avoiding. The ultrasonic sensor is mainly used for this purpose. Study the previous articles for more information.
+
+2.Bluetooth control
+In this case, we can control the robot through an app on the smartphone. The Bluetooth module is used for this.
+
+3.Voice control
+In this case, we can control this robot using several voice commands. This also requires a Bluetooth module and mobile app.
