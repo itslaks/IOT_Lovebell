@@ -1,0 +1,36 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Alert {
+  createdAt      DateTime           @default(now())
+  description    String?
+  id             String             @id @default(cuid())
+  networkEvent   NetworkEvent?      @relation(fields: [networkEventId], references: [id])
+  networkEventId String?
+  severity       EnumAlertSeverity?
+  updatedAt      DateTime           @updatedAt
+}
+
+model NetworkEvent {
+  alerts          Alert[]
+  createdAt       DateTime  @default(now())
+  destinationIp   String?
+  destinationPort Int?
+  id              String    @id @default(cuid())
+  payload         Json?
+  protocol        String?
+  sourceIp        String?
+  sourcePort      Int?
+  timestamp       DateTime?
+  updatedAt       DateTime  @updatedAt
+}
+
+enum EnumAlertSeverity {
+  Option1
+}
